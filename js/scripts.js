@@ -16,9 +16,15 @@ $(document).ready(function(){
       });
   console.log(total);
 
+if (total > 15) {
+  $("#goodFortune").show();
+} else if ((total <= 15) && (total > 0)) {
+  $("#neutralFortune").show();
+} else {
+  $("#badFortune").show();
+}
 
-
-  $(.output).show(total);
+  $(".output").show(total);
   });
 
 });
